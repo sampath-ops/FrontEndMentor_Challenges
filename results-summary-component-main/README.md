@@ -26,15 +26,16 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
+- Desktop View without active button state.
 ![](./screenshots/screenshot1.png)
+- Desktop View with active button state.
 ![](./screenshots/screenshot-active_btn.png)
+- Mobile View 
 ![](./screenshots/screenshot_mobile-view.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click here 🤓](https://github.com/sampath-ops/FrontEndMentor_Challenges/tree/master/results-summary-component-main).
 
 ## My process
 
