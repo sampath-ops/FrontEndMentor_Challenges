@@ -1,0 +1,48 @@
+.result{
+    background:linear-gradient( $Light_slate_blue,$Light_royal_blue);
+    padding: 2.5rem 3.75rem; //25px 60px
+    border-radius: 2rem; //32px
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    z-index: 1;
+    >h3{
+        color: $Light_lavender;
+    }
+    @include breakpoint-down(medium){
+        margin-top: -25px;
+        padding-top: 55px;
+    }
+    &_percentage{
+        background:linear-gradient(to bottom,$Violet_blue,$Persian_blue) ;
+        border-radius: 50%;
+        width: 80%;
+        padding: 2.8125rem; //45px
+        margin: 2rem 0; //32px
+        @include breakpoint-down(medium){
+            width: 65%;
+        }
+        h1{
+            color:$White;
+            font-size: 4rem; //64px
+            font-weight: 800;
+        }
+        p{
+            color: hsla(241, 100%, 89%, 0.774);
+            font-weight: 700;
+        }
+    }
+    &_greeting{
+        // display: grid;
+        // justify-items: center;
+        h2{
+            color: $White;
+            font-size: 2rem; //32px
+        }
+        p{
+            color: $Light_lavender;
+            margin: 1rem 0; // 16px
+            // width: 50%;
+        }
+    }
+}
