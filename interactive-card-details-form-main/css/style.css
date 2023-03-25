@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+.card_container_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.card_details_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_details_container .card_details {
+  padding: 50px;
+  width: 55%;
+}
+
+.card_details_container .card_details_holdername > input, .card_details_container .card_details_cardno > input, .card_details_container .card_details .expdate input, .card_details_container .card_details .cvc {
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid #dedddf;
+  outline: none;
+}
+
+.card_details_container .card_details_holdername > input::-webkit-input-placeholder, .card_details_container .card_details_cardno > input::-webkit-input-placeholder, .card_details_container .card_details .expdate input::-webkit-input-placeholder, .card_details_container .card_details .cvc::-webkit-input-placeholder {
+  color: #8e8593;
+}
+
+.card_details_container .card_details_holdername > input:-ms-input-placeholder, .card_details_container .card_details_cardno > input:-ms-input-placeholder, .card_details_container .card_details .expdate input:-ms-input-placeholder, .card_details_container .card_details .cvc:-ms-input-placeholder {
+  color: #8e8593;
+}
+
+.card_details_container .card_details_holdername > input::-ms-input-placeholder, .card_details_container .card_details_cardno > input::-ms-input-placeholder, .card_details_container .card_details .expdate input::-ms-input-placeholder, .card_details_container .card_details .cvc::-ms-input-placeholder {
+  color: #8e8593;
+}
+
+.card_details_container .card_details_holdername > input::placeholder, .card_details_container .card_details_cardno > input::placeholder, .card_details_container .card_details .expdate input::placeholder, .card_details_container .card_details .cvc::placeholder {
+  color: #8e8593;
+}
+
+.card_details_container .card_details_holdername > label, .card_details_container .card_details_cardno > label, .card_details_container .card_details_expdate_cvc > label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card_details_container .card_details_holdername {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 25px;
+}
+
+.card_details_container .card_details_cardno {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 25px;
+}
+
+.card_details_container .card_details_expdate_cvc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card_details_container .card_details_expdate_cvc .expdate {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.card_details_container .card_details_expdate_cvc .expdate input {
+  width: 100%;
+}
+
+.card_details_container .card_details_expdate_cvc .cvc {
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.card_details_container .card_details .confirm_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card_details_container .card_details .confirm_btn > button {
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  background-color: #21092f;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.card_details_container .error_el {
+  border-color: #ff5252 !important;
+}
+
+.card_details_container .msgerr {
+  color: #ff5252;
+  font-size: 12px;
+}
+
+.card_imgs {
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.card_imgs_1 {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+
+.card_imgs_2 {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+/*# sourceMappingURL=style.css.map */

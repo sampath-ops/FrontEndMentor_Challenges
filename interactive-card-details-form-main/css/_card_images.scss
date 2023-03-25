@@ -1,0 +1,16 @@
+.card_imgs{
+        background-image: url("../images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+        &_1{
+            position: absolute;
+            left: 30%;
+            top: 5%;
+        }
+        &_2{
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+        }
+}  
