@@ -16,7 +16,7 @@
 .prettierignore
 
 #project related files
-style-guide.md
-/design
 notes.txt
 welcome-guide.md
+styleGuide.md
+designs
