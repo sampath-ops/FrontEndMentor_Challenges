@@ -17,11 +17,23 @@ body {
   font-size: 18px;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 .card_container_wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block !important;
 }
 
 .card_details_container {
@@ -157,5 +169,51 @@ body {
   position: absolute;
   bottom: 10%;
   left: 50%;
+}
+
+.thank_you {
+  padding: 50px;
+  width: 55%;
+  display: none;
+}
+
+.thank_you_container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 18px;
+}
+
+.thank_you_container > h2 {
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.thank_you_container > p {
+  color: #8e8593;
+}
+
+.thank_you_container .continue_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.thank_you_container .continue_btn > button {
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  background-color: #21092f;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

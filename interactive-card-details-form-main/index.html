@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div>
-                <input class="cvc" id="cvc" type="text" oninput="this.value = this.value.replace(/\D/g, '');" placeholder="e.g. 123" name="cvc">
+                <input class="cvc" id="cvc" type="text" oninput="this.value = this.value.replace(/\D/g, '');" placeholder="e.g. 123" name="cvc" maxlength="3" autocomplete="off">
                 <span id="cvcerr"></span>
               </div>
             </div>
@@ -58,6 +58,18 @@
               <button type="submit">Confirm</button>
             </div>
       </form>
+      <!-- thankyou component -->
+      <div class="thank_you" id="thankyou">
+        <div class="thank_you_container">
+          <img src="./images/icon-complete.svg" alt="thank you">
+          <h2>THANK YOU!</h2>
+          <p>We've added your card details</p>
+          <div class="continue_btn">
+            <button onclick="resetForm()">Continue</button>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
   </section>

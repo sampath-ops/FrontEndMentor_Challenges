@@ -14,7 +14,16 @@ body{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
 }
+h1,h2,h3,p{
+    margin: 0;
+}
 .card_container_wrapper{
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: block !important;
 }

@@ -1,0 +1,35 @@
+.thank_you{
+    padding: 50px;
+    width: 55%;
+    display: none;
+   &_container{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        row-gap: 18px;
+    & > h2{
+        letter-spacing: 4px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    & > p{
+        color: $Dark_grayish_violet;
+    }
+    .continue_btn{
+        display: flex;
+        margin-top: 25px;
+        width: 100%;
+        & > button{
+            cursor: pointer;
+            padding: 16px;
+            width: 100%;
+            border: none;
+            background-color: $Very_dark_violet;
+            color: $White;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 8px;
+        }   
+    }
+   }
+}

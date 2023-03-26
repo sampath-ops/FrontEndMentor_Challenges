@@ -1,5 +1,8 @@
-// select form and its elements
+// select form and thank you page
 const form = document.getElementById("details_form");
+const thankyou = document.getElementById("thankyou");
+
+// select form elements
 const namein = document.getElementById("holder_name");
 const nameerr = document.getElementById("name_error");
 const cardnum = document.getElementById("card_no");
@@ -12,7 +15,6 @@ const el_cvc = document.getElementById("cvc");
 const cvcerr = document.getElementById("cvcerr");
 
 // add and remove error message
-
 const add_err = (input_el,errmsg_el,txt)=>{
     input_el.classList.add("error_el");
     errmsg_el.textContent = txt;
@@ -25,7 +27,7 @@ const remove_err = (input_el,errmsg_el)=>{
     errmsg_el.classList.remove("msgerr");
 }
 
-
+// function to validate whenever cardnumber value changes
 const validateCardNo = (event)=>{
     const cardNumber = event.target.value;
     // validate card number
@@ -50,11 +52,13 @@ form.addEventListener("submit",(e)=>{
     const year = data.get("year");
     const cvc = data.get("cvc");
     let isvalid = true;
-
     // check card holder name is empty.
     if(!name){ 
         add_err(namein,nameerr,"Please fill your name");
         isvalid=false;
+    }
+    else{
+        remove_err(namein,nameerr);
     }
 
     // check cardnumber is empty
@@ -62,11 +66,11 @@ form.addEventListener("submit",(e)=>{
         add_err(cardnum,numbererr,"Card number can't be empty");
         isvalid=false;
     }
-    else if(isNaN(cardNumber)){
+    else if(isNaN(cardno)){
         add_err(cardnum,numbererr,"Wrong format, numbers only");
         isvalid=false;
     }
-    else if(cardNumber.length < 16 || cardNumber.length > 16){
+    else if(cardno.length < 16 || cardno.length > 16){
         add_err(cardnum,numbererr,"Invalid card number");
         isvalid=false;
     }
@@ -80,6 +84,9 @@ form.addEventListener("submit",(e)=>{
         add_err(el_month,montherr,"Invalid");
         isvalid=false;
     }
+    else{
+        remove_err(el_month,montherr);
+    }
 
     // check year is empty and valid
     if(!year){
@@ -89,6 +96,9 @@ form.addEventListener("submit",(e)=>{
     else if(isNaN(year)){
         add_err(el_year,yearerr,"Invalid");
         isvalid=false;
+    }
+    else{
+        remove_err(el_year,yearerr);
     }
 
     // chech cvc is empty and valid
@@ -100,12 +110,25 @@ form.addEventListener("submit",(e)=>{
         add_err(el_cvc,cvcerr,"Invalid cvc")
         isvalid=false;
     }
+    else{
+        remove_err(el_cvc,cvcerr)
+    }
 
     // send data to db if form is valid
     if(isvalid){
         console.log("form is valid");
         console.log(data);
+        form.classList.add("hidden");
+        thankyou.classList.add("visible");
     }
-
-
 })
+
+const resetForm = ()=>{
+    namein.value = "";
+    cardnum.value = "";
+    el_month.value = "";
+    el_year.value = "";
+    el_cvc.value = "";
+    form.classList.add("visible");
+    thankyou.classList.remove("visible");
+}
