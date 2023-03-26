@@ -15,4 +15,8 @@
 .DS_Store
 .prettierignore
 
-README.md
+#project related files
+style-guide.md
+/design
+notes.txt
+welcome-guide.md
